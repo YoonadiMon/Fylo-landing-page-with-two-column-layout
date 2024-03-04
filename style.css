@@ -149,7 +149,7 @@ main #botMain,
 }
 
 
-/* footer */
+/* footer singup */
 #singUp {
     width: 100vw;
     background: #575989;
@@ -176,14 +176,17 @@ main #botMain,
     color: aliceblue;
     cursor: pointer;
 }
+
+/* footer nav */
 #footerNav {
     padding-left: 55px;
     padding-top: 100px;
     padding-bottom: 60px;
     width: 100vw;
     margin-left: -10px;
-    margin-bottom: 0;
+    margin-bottom: -10px;
     background: linear-gradient(20deg, #07043b, #1c043b);
+    
 }
 /* #changeLogo {
      to black 
@@ -191,28 +194,21 @@ main #botMain,
      or to blue
     filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg); 
 } */
-#footerNav table {
+#botNavLinks {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 95%;
+    line-height: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
 }
-#footerNav table td {
-    width: 20%;
+#botNavLinks h3 {
+    font-size: 14px;
 }
-#footerNav table tr {
-    line-height: 2px;
-}
-#footerNav table h3 {
-    font-size: 12px;
-}
-#footerNav table h3 a {
+#botNavLinks a {
     text-decoration: none;
     color: white;
-}
-#footerNav table tr .footerNav-oneline {
-    width: 300px;
-    padding-right: 0;
-    margin-right: 0;
 }
 .footerNav-oneline img {
     padding-right: 10px;
@@ -237,7 +233,7 @@ main #botMain,
     main #botMain,
     #testimonial,
     #singUp,
-    #footerNav table {
+    #botNavLinks {
         flex-direction: column;
     }
 
@@ -287,6 +283,9 @@ main #botMain,
     #singUp, #footerNav {
         margin-left: 0
     }
+    #singUpR {
+        margin-bottom: 30px;
+    }
     #singUpR input {
         width: 100%;
         height: 40px;
@@ -297,5 +296,11 @@ main #botMain,
 
     #footerNav {
         margin: 0;
+    }
+    #botNavLinks div {
+        margin-bottom: 20px;
+    }
+    #col4 {
+        align-self: center;
     }
 }
