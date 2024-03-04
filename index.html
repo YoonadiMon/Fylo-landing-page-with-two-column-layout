@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+
+</head>
+<body>
+  <header>
+      <a id="headerLogo" href="index.html"><img src="/images/logo.svg" alt="logo"></a>
+      <nav>
+        <ul class="Raleway">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Sign In</a></li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <section id="topMain">
+      <div id="topMainL">
+        <h1 class="Raleway">All your files in one secure location, accessible anywhere.</h1>
+        <p>Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+
+        <span id="email">
+          <input type="text" placeholder="Enter your email..." class="Raleway">
+          <h2 class="Raleway">Get Started</h2>
+        </span>
+      </div>
+      <div id="topMainR">
+        <img src="/images/illustration-1.svg" alt="illustration-1">
+      </div>
+    </section>
+
+    <img id="bgCurve" src="/images/bg-curve-desktop.svg" alt="bg-curve">
+
+    <section id="botMain">
+      <div id="botMainL">
+        <h1 class="Raleway">Stay productive, wherever you are</h1>
+        <p>
+          Never let location be an issue when accessing your files. Fylo has you <br>covered for all of your file storage needs.
+        </p>
+        <p>
+          Securely share files and folders with friends, family and colleagues for <br>live collaboration. No email attachments required!
+        </p>
+
+        <a href="#" id="fyloLink">
+          See how Fylo works <img src="/images/icon-arrow.svg" alt="icon-arrow">
+        </a>  
+
+        <article id="card" class="Raleway">
+          <img src="/images/icon-quotes.svg" alt="icon-quotes">
+          <p>
+            Fylo has improved our team productivity by <br>an order of magnitude. Since making the <br>switch our team has become a well-oiled <br>collaboration machine.
+          </p>
+          <div id="testimonial">
+            <img src="/images/avatar-testimonial.jpg" alt="avatar-testimonial">
+            <div id="info">
+              <h3>Kyle Burton</h3>
+              <h4>Founder & CEO, Huddle</h4>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div id="botMainR">
+        <img src="/images/illustration-2.svg" alt="illustration-1">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section id="singUp">
+      <div id="singUpL">
+        <h1>Get early access today</h1>
+        <p>It only takes a minute to sign up and our free starter tier is <br>extremely generous. If you have any questions, our support team <br>would be happy to help you.</p>
+      </div>
+      <div id="singUpR">
+        <input type="text" placeholder="email@example.com" class="Raleway">
+          <h2 class="Raleway">Get Started For Free</h2>
+      </div>
+    </section>
+    <nav id="footerNav" class="Raleway">
+      <img src="/images/logoWhite.svg" alt="logo">
+      
+      <table>
+        <tr>
+          <td class="footerNav-oneline">
+            <img src="/images/icon-phone.svg" alt="icon-phone">
+            <h3>Phone: +1-543-123-4567</h3>
+          </td>
+          <td class="col2">
+            <h3><a href="#">About Us</a></h3>
+          </td>
+          <td>
+            <h3><a href="#">Contact Us</a></h3>
+          </td>
+          <td id="icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            
+          </td>
+        </tr>
+        <tr>
+          <td class="footerNav-oneline">
+            <img src="/images/icon-email.svg" alt="icon-email">
+            <h3>example@fylo.com</h3>
+          </td>
+          <td class="col2">
+            <h3><a href="#">Jobs</a></h3>
+          </td>
+          <td>
+            <h3><a href="#">Terms</a></h3>
+          </td>
+          <td>
+            
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <h3 class="col2"><a href="#">Press</a></h3>
+          </td>
+          <td>
+            <h3><a href="#">Privacy</a></h3>
+          </td>
+          <td></td>
+        </tr>
+        <tr id="row4">
+          <td>
+            <img src="/images/" alt="">
+          </td>
+          <td class="col2">
+            <h3><a href="#">Blog</a></h3>
+          </td>
+        </tr>
+      </table>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/YoonadiMon">Yoonadi Mon</a>.
+      </p>
+    </nav>
+    
+  </footer>
+</body>
+</html>
