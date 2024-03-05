@@ -110,9 +110,12 @@ main #botMain,
     background-color: #f9f8fe;
     width: 100vw;
 }
-#bgCurve {
+#bgCurve_DT {
     margin-top: 40px;
     width: 99vw;
+}
+#bgCurve_MB {
+    display: none;
 }
 #botMainL, #singUpL {
     margin: 55px 70px;
@@ -121,6 +124,13 @@ main #botMain,
     color: #90b9b3;
     font-size: 20px;
     text-decoration: underline;
+    text-underline-offset: 7px;
+    text-underline-position: under;
+}
+#fyloLink img {
+    width: 20px;
+    padding-top: 14.5px;
+    border-bottom: 1.5px solid #90b9b3;
 }
 #fyloLink img {
     vertical-align: middle;
@@ -228,16 +238,16 @@ main #botMain,
     main, footer {
         overflow: hidden;
     }
-    main #topMain,
+    
     #email,
-    main #botMain,
     #testimonial,
     #singUp,
-    #botNavLinks {
+    #botNavLinks, 
+    #botMainL {
         flex-direction: column;
     }
 
-    header, #topMain {
+    header, #topMain, #botMainL {
         margin: 35px 10px;
     }
     body {
@@ -257,6 +267,13 @@ main #botMain,
         margin-right: 20px;   
     }
 
+    main #topMain, 
+    main #botMain {
+        flex-direction: column-reverse;
+    }
+    #topMainL {
+        margin-right: 0;
+    }
     #topMainL h1 {
         font-size: 1.2em;
     }
@@ -265,6 +282,13 @@ main #botMain,
     }
     #topMainL h1, #topMainL p {
         text-align: center;
+    }
+    #topMainL, #topMainR,
+    #botMainL, #botMainR {
+        flex: 100%;
+    }
+    #email {
+        padding: 0 10px;
     }
     #email input {
         width: 100%;
@@ -275,10 +299,30 @@ main #botMain,
         width: 100%;
     }
 
-    
+    #bgCurve_DT {
+        display: none;
+    }
+    #bgCurve_MB {
+        display: block;
+    }
 
+    #botMainL {
+        display: flex;
+    }
     #botMainL h1 {
         font-size: 20px;
+        text-align: center;
+    }
+    #fyloLink {
+        align-self: center;
+    }
+    #card {
+        align-self: center;
+        padding: 20px;
+        width: 80%;
+    }  
+    #testimonial {
+        flex-direction: row;
     }
     #singUp, #footerNav {
         margin-left: 0
