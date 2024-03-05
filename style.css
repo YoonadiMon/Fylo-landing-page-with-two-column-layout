@@ -11,10 +11,13 @@ header, #topMain {
 }
 
 /* font */
+html {
+    font-size: 16px;
+}
 h1 {
     font-size: 2.1em;
 }
-p {
+p, #fyloLink {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
 }
@@ -35,7 +38,8 @@ main #botMain,
     align-items: center;
 }
 #topMainL, #topMainR,
-#botMainL, #botMainR {
+#botMainL, #botMainR,
+#singUpL, #singUpR {
     flex: 50%;
 }
 #topMainL, #botMainL {
@@ -70,7 +74,8 @@ header nav ul li a::after {
 header nav ul li a:hover:after {
     width: 100%;
 }
-header nav ul li a:hover {
+header nav ul li a:hover,
+#botNavLinks a:hover {
     color: #bdbafa;
 }
 
@@ -86,7 +91,7 @@ header nav ul li a:hover {
 #email h2 {
     width: 30%;
     height: 40px;   
-    font-size: 12px; 
+    font-size: 0.8em; 
     border-radius: 5px;
     line-height: 40px;
     text-align: center;
@@ -119,16 +124,15 @@ header nav ul li a:hover {
     margin: 55px 70px;
 }
 #fyloLink {
-    color: #90b9b3;
-    font-size: 20px;
-    text-decoration: underline;
-    text-underline-offset: 7px;
-    text-underline-position: under;
+    color: #6dafa5;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-bottom: 1.5px solid #90b9b3;
+    margin-bottom: 0;
 }
 #fyloLink img {
     width: 20px;
-    padding-top: 14.5px;
-    border-bottom: 1.5px solid #90b9b3;
+    
 }
 #fyloLink img {
     vertical-align: middle;
@@ -175,7 +179,7 @@ header nav ul li a:hover {
 #singUpR h2 {
     width: 200px;
     height: 40px;   
-    font-size: 12px; 
+    font-size: 0.8em; 
     border-radius: 3px;
     line-height: 40px;
     text-align: center;
@@ -212,7 +216,7 @@ header nav ul li a:hover {
     justify-content: space-between;
 }
 #botNavLinks h3 {
-    font-size: 14px;
+    font-size: 0.9em;
 }
 #botNavLinks a {
     text-decoration: none;
@@ -240,6 +244,12 @@ header nav ul li a:hover {
         margin: 0;
         padding: 0;
     }
+    html {
+        font-size: 13px;
+    }
+    h1 {
+        font-size: 1.7em;
+    }
     
     #email,
     #testimonial,
@@ -250,13 +260,13 @@ header nav ul li a:hover {
     }
 
     header, #topMain, #botMainL {
-        margin: 35px 10px;
+        margin: 35px 20px;
     }
     #headerLogo img {
         width: 70px;
     }
     header nav ul li {
-        font-size: 0.7em;
+        font-size: 1em;
         margin-right: 20px;   
     }
 
@@ -267,25 +277,30 @@ header nav ul li a:hover {
     #topMainL {
         margin-right: 0;
     }
-    #topMainL h1 {
-        font-size: 1.2em;
-    }
     #topMainL p {
-        font-size: 0.8em;
+        font-size: 1em;
+        padding: 0 5px;
     }
-    #topMainL h1, #topMainL p {
+    #topMainL h1, #topMainL p, #singUpL h1, #singUpL p {
         text-align: center;
     }
     #topMainL, #topMainR,
     #botMainL, #botMainR {
         flex: 100%;
     }
+    #topMainR img,
+    #botMainR img {
+    width: 80%;
+}
     #botMain {
         margin: -5px 0 0 0;
         padding: 0;
     }
+    #botMainL {
+        margin-bottom: 10vh;
+    }
     #email {
-        padding: 0 10px;
+        padding: 0 20px;
     }
     #email input {
         margin: 0;
@@ -298,8 +313,11 @@ header nav ul li a:hover {
         display: flex;
     }
     #botMainL h1 {
-        font-size: 20px;
+
         text-align: center;
+    }
+    #botMainL p {
+        color: rgb(116, 116, 116);
     }
     #fyloLink {
         align-self: center;
@@ -322,7 +340,7 @@ header nav ul li a:hover {
 
 
     #singUp, #footerNav {
-        margin-left: 0
+        margin-left: 0;
     }
     #singUpR {
         margin-bottom: 30px;
